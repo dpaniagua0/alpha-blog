@@ -53,14 +53,14 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
+  background-color: #F5F5F5;
   height: 60px;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #F5F5F5;
   padding-top: 15px;
 }
 
 .footer .text-muted {
   margin: 20px 0px;
-  color: #fff;
 }
 .footer small {
   float: left;
