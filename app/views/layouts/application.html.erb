@@ -7,32 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <%= render 'layouts/navigation' %>
   <div class="container">
-     <div class="header clearfix">
-       <nav>
-         <ul class="nav nav-pills pull-xs-right">
-           <li class="nav-item active">
-             <%= link_to "Home", root_path, :class => "nav-link" %>
-           </li>
-           <li class="nav-item">
-             <%= link_to "About", about_path, :class => "nav-link" %>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#">Contact</a>
-           </li>
-         </ul>
-       </nav>
-       <h3 class="text-muted">Alpha Blog</h3>
-     </div>
-     <%= render 'layouts/messages' %>
-     <%= yield %>
+
+    <%= render 'layouts/messages' %>
+    <%= yield %>
 
 
-     <footer class="footer">
-       <p>&copy; Company 2014</p>
-     </footer>
    </div>
+   <%= render 'layouts/footer' %>
 
 </body>
 </html>
