@@ -6,4 +6,10 @@
   </div>
 </div>
 <h4 class="text-center"><%= @user.username %>'s articles</h4>
-<%= render 'articles/articles', obj: @user.articles %>
+<div class="text-center">
+  <%= will_paginate @user_articles %>
+</div>
+<%= render 'articles/articles', obj: @user_articles %>
+<div class="text-center">
+  <%= will_paginate @user_articles %>
+</div>
