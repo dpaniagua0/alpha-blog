@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   resources :articles
   resources :users, except: [:new]
+  resources :categories, except: [:delete]
 
   #login route
   get 'login', to: 'sessions#new'
